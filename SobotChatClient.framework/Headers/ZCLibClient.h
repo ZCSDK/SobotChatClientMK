@@ -15,7 +15,8 @@ typedef NS_ENUM(NSInteger,ZCServerConnectStatus) {
     ZCServerConnectOffline    = 0, // 当前会话已经结束
     ZCServerConnectRobot      = 1, // 机器人
     ZCServerConnectArtificial = 2, // 人工接入成功
-    ZCServerConnectWaiting    = 3  // 仅人工的排队
+    ZCServerConnectWaiting    = 3,  // 仅人工的排队
+    ZCServerConnectArtificialinit = 4, // 初始化会话保持人工接入成功
 };
 
 

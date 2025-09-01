@@ -278,7 +278,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///      unAckSize 未确认消息数
 ///      message 收到最后一条消息内容 （eg:您收到了一条新消息）
 ///      time  收到最后一条消息的时间戳 （未读消息、离线消息、未确认消息 三者比较取时间为最后的一条消息）
-+(void)getOfflineMsgAndUnAckMsgWith:(NSString *)partnerid appkey:(NSString*)appkey resultBlock:(void (^)(NSDictionary *object, NSString *message,int unReadSize,int offlineSize,int unAckSize,NSString *time))ResultBlock;
++(void)getOfflineMsgAndUnAckMsgWith:(NSString *)partnerid appkey:(NSString*)appkey resultBlock:(void (^)(NSDictionary *object, NSString *message,int unReadSize,int offlineSize,int unAckSize,NSString *time ,int totalSize))ResultBlock;
 @end
 
 NS_ASSUME_NONNULL_END
